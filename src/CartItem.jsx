@@ -43,6 +43,10 @@ const CartItem = ({ onContinueShopping, onRemoveFromCart }) => {
     return costAsNumber * quantityAsNumber;
   };
 
+  const handleCheckout = () => {
+    alert("Soon to be implemented");
+  };
+
   return (
     <div className="cart-container">
       <h2 style={{ color: 'black' }}>Total Cart Amount: ${calculateTotalAmount()}</h2>
@@ -72,7 +76,7 @@ const CartItem = ({ onContinueShopping, onRemoveFromCart }) => {
       <div className="continue_shopping_btn">
         <button className="get-started-button" onClick={handleContinueShopping}>Continue Shopping</button>
         <br />
-        <button className="get-started-button1">Checkout</button>
+        <button className="get-started-button1" onClick={handleCheckout}>Checkout</button>
       </div>
     </div>
   );
